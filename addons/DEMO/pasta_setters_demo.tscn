@@ -1,0 +1,52 @@
+[gd_scene load_steps=6 format=3 uid="uid://uabhi6t3rdti"]
+
+[ext_resource type="Script" path="res://addons/PastaPropertySetters/Setinators/pasta_setter_component_group.gd" id="1_1t0ac"]
+[ext_resource type="Script" path="res://addons/PastaPropertySetters/Setinators/pasta_setter_sprite.gd" id="2_ii8h1"]
+[ext_resource type="Script" path="res://addons/PastaPropertySetters/Setinators/pasta_setter_transform.gd" id="3_opgs1"]
+[ext_resource type="Script" path="res://addons/PastaPropertySetters/Setinators/pasta_setter_variant.gd" id="4_dhwx2"]
+[ext_resource type="Texture2D" uid="uid://4e4w5uq4ky0m" path="res://addons/DEMO/kenney_pixel_platformer_characters.png" id="5_tcldd"]
+
+[node name="PastaSettersDemo" type="Node2D"]
+
+[node name="Change My Current Set and click Apply" type="Node" parent="."]
+script = ExtResource("1_1t0ac")
+set_count = 3
+
+[node name="PastaSetterSprite" type="Node" parent="Change My Current Set and click Apply" node_paths=PackedStringArray("target_node")]
+script = ExtResource("2_ii8h1")
+target_node = NodePath("../../KenneyPixelPlatformerCharacters")
+set_count = 3
+frame_value = PackedInt32Array(0, 0, 0)
+frame_coords_value = PackedVector2Array(0, 0, 0, 0, 0, 0)
+offset_value = PackedVector2Array(0, 0, 0, 0, 0, 0)
+flip_h_value = Array[bool]([false, false, false])
+flip_v_value = Array[bool]([false, false, false])
+modify_region = true
+region_value = Array[Rect2]([Rect2(0, 0, 224, 74), Rect2(153, 54, 18, 17), Rect2(205, 32, 15, 17)])
+tex_value = Array[Texture2D]([null, null, null])
+
+[node name="PastaSetterTransform" type="Node" parent="Change My Current Set and click Apply" node_paths=PackedStringArray("target_node")]
+script = ExtResource("3_opgs1")
+target_node = NodePath("../../KenneyPixelPlatformerCharacters")
+set_count = 3
+modify_position = true
+position_value = PackedVector2Array(0, -37, 70, -26, -45, -9)
+modify_rotation = true
+rotation_value = PackedFloat32Array(0, 0, 0)
+scale_value = PackedVector2Array(0, 0, 0, 0, 0, 0)
+skew_value = PackedFloat32Array(0, 0, 0)
+
+[node name="PastaSetterVariant" type="Node" parent="Change My Current Set and click Apply" node_paths=PackedStringArray("target_node")]
+script = ExtResource("4_dhwx2")
+target_node = NodePath("../../Polygon2D")
+set_count = 3
+target_property = &"polygon"
+
+[node name="KenneyPixelPlatformerCharacters" type="Sprite2D" parent="."]
+position = Vector2(0, -37)
+texture = ExtResource("5_tcldd")
+region_enabled = true
+region_rect = Rect2(0, 0, 224, 74)
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+polygon = PackedVector2Array(17, 0, 17, 17, 1, 17, 1, 0)
