@@ -3,8 +3,8 @@
 [ext_resource type="Script" path="res://addons/PastaPropertySetters/Setinators/pasta_setter_component_group.gd" id="1_1t0ac"]
 [ext_resource type="Script" path="res://addons/PastaPropertySetters/Setinators/pasta_setter_sprite.gd" id="2_ii8h1"]
 [ext_resource type="Script" path="res://addons/PastaPropertySetters/Setinators/pasta_setter_transform.gd" id="3_opgs1"]
-[ext_resource type="Script" path="res://addons/PastaPropertySetters/Setinators/pasta_setter_variant.gd" id="4_dhwx2"]
-[ext_resource type="Texture2D" uid="uid://4e4w5uq4ky0m" path="res://addons/DEMO/kenney_pixel_platformer_characters.png" id="5_tcldd"]
+[ext_resource type="Script" path="res://addons/PastaPropertySetters/Setinators/pasta_setter_variant.gd" id="4_k41wl"]
+[ext_resource type="Texture2D" uid="uid://4e4w5uq4ky0m" path="res://addons/PastaPropertySetters/DEMO/kenney_pixel_platformer_characters.png" id="5_tcldd"]
 
 [node name="PastaSettersDemo" type="Node2D"]
 
@@ -37,10 +37,11 @@ scale_value = PackedVector2Array(0, 0, 0, 0, 0, 0)
 skew_value = PackedFloat32Array(0, 0, 0)
 
 [node name="PastaSetterVariant" type="Node" parent="Change My Current Set and click Apply" node_paths=PackedStringArray("target_node")]
-script = ExtResource("4_dhwx2")
+script = ExtResource("4_k41wl")
 target_node = NodePath("../../Polygon2D")
 set_count = 3
 target_property = &"polygon"
+value = [PackedVector2Array(-23, 12, 26, 12, 26, 53, -23, 53), PackedVector2Array(41, -22, 51, -25, 29, -31, 3, -12, 7, 36, -15, 61, -19, 97, -27, 156, -10, 143, -8, 159, 14, 111, 18, 147, 48, 63, 101, 53, 120, 13, 112, -26, 99, -31, 108, -22, 92, -22, 109, 1, 87, -12, 92, 22, 78, -3, 63, 30, 59, 20, 68, -6, 46, 24, 46, 15, 57, 1, 35, 14, 44, -1, 34, -7, 53, -10), PackedVector2Array(-42, -34, -17, -118, -33, -93, -37, -74, -38, -126, -20, -186, -10, -165, -6, -224, 4, -203, 23, -220, 24, -196, 52, -212, 32, -190, 17, -154, 73, -157, 109, -110, 126, -65, 155, -50, 221, -53, 131, -30, 83, -41, 91, -24, 79, -11, 84, -3, 72, -8, 54, -1, 59, -9, 71, -15, 77, -26, 64, -41, 31, -70, 24, -112, 14, -128)]
 
 [node name="KenneyPixelPlatformerCharacters" type="Sprite2D" parent="."]
 position = Vector2(0, -37)
@@ -49,4 +50,4 @@ region_enabled = true
 region_rect = Rect2(0, 0, 224, 74)
 
 [node name="Polygon2D" type="Polygon2D" parent="."]
-polygon = PackedVector2Array(17, 0, 17, 17, 1, 17, 1, 0)
+polygon = PackedVector2Array(-23, 12, 26, 12, 26, 53, -23, 53)

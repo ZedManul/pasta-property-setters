@@ -3,7 +3,6 @@
 class_name PastaSetterVariant
 extends PastaSetterComponent
 ## Can apply and record any property on a given node;
-## NOTE: You can only pre-set the value via the record button.
 
 ## The monitored and modified node.
 @export var target_node: Node
@@ -21,9 +20,9 @@ extends PastaSetterComponent
 
 ## The monitored and modified property.
 @export var target_property: StringName
-## The recorded value of the monitored and modified property.
-var value: Array[Variant]
 
+## The recorded value of the monitored and modified property.
+@export var value: Array[Variant]
 
 ## When called, will set the chosen property on the target node to the recorded value.
 func apply()->void:
