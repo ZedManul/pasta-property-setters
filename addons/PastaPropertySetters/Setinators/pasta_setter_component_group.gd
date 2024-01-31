@@ -1,5 +1,5 @@
 @tool
-@icon("Icons/icon_bone_state.png")
+@icon("Icons/icon_setter_group.png")
 class_name PastaSetterComponentGroup
 extends PastaSetterComponent
 ## Applies or records all child property set components at once.

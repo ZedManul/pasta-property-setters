@@ -1,5 +1,5 @@
 @tool
-@icon("Icons/icon_bone_state_component.png")
+@icon("Icons/icon_setter.png")
 class_name PastaSetterComponent
 extends Node
 ## Parent node for property setter components;

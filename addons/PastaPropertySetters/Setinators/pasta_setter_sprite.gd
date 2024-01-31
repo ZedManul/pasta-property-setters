@@ -1,5 +1,5 @@
 @tool
-@icon("Icons/icon_bone_state_component.png")
+@icon("Icons/icon_setter_sprite.png")
 class_name PastaSetterSprite
 extends PastaSetterComponent
 ## Can apply and record certain important properties of a Sprite2D node.

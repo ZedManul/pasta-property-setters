@@ -1,5 +1,5 @@
 @tool
-@icon("Icons/icon_bone_state_component.png")
+@icon("Icons/icon_setter_sprite_animated.png")
 class_name PastaSetterAnimatedSprite
 extends PastaSetterComponent
 ## Can apply and record certain important properties of an AnimatedSprite2D node.

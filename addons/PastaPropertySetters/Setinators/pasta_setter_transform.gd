@@ -1,5 +1,5 @@
 @tool
-@icon("Icons/icon_bone_state_component.png")
+@icon("Icons/icon_setter_transform.png")
 class_name PastaSetterTransform
 extends PastaSetterComponent
 ## Can apply and record certain important properties of a transform 2D component.

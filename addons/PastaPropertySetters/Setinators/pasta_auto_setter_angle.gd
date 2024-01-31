@@ -1,5 +1,5 @@
 @tool
-@icon("Icons/icon_state_angle_fixer.png")
+@icon("Icons/icon_autosetter_angle.png")
 class_name PastaAutoSetterAngle
 extends PastaSetterInator
 ## Automatically switches a property set group depending on node's rotation.

@@ -10,28 +10,28 @@ func _enter_tree() -> void:
 	#region Load Property State Managers
 	add_custom_type("PastaSetterComponent", "Node", 
 			preload("Setinators/pasta_setter_component.gd"), 
-			preload("Setinators/Icons/icon_bone_state_component.png"))
+			preload("Setinators/Icons/icon_setter.png"))
 	add_custom_type("PastaSetterComponentGroup", "Node", 
 			preload("Setinators/pasta_setter_component_group.gd"), 
-			preload("Setinators/Icons/icon_bone_state.png"))
+			preload("Setinators/Icons/icon_setter_group.png"))
 	add_custom_type("PastaSetterVariant", "Node", 
 			preload("Setinators/pasta_setter_variant.gd"), 
-			preload("Setinators/Icons/icon_bone_state_component.png"))
+			preload("Setinators/Icons/icon_setter_variant.png"))
 	add_custom_type("PastaSetterTransform", "Node", 
 			preload("Setinators/pasta_setter_transform.gd"), 
-			preload("Setinators/Icons/icon_bone_state_component.png"))
+			preload("Setinators/Icons/icon_setter_transform.png"))
 	add_custom_type("PastaSetterSprite", "Node", 
 			preload("Setinators/pasta_setter_sprite.gd"), 
-			preload("Setinators/Icons/icon_bone_state_component.png"))
+			preload("Setinators/Icons/icon_setter_sprite.png"))
 	add_custom_type("PastaSetterAnimatedSprite", "Node", 
 			preload("Setinators/pasta_setter_animatedsprite.gd"), 
-			preload("Setinators/Icons/icon_bone_state_component.png"))
+			preload("Setinators/Icons/icon_setter_sprite_animated.png"))
 	add_custom_type("PastaSetterInator", "Node", 
 			preload("Setinators/pasta_setter_inator.gd"), 
-			preload("Setinators/Icons/icon_state.png"))
+			preload("Setinators/Icons/icon_setter_manager.png"))
 	add_custom_type("PastaAutoSetterAngle", "Node", 
 			preload("Setinators/pasta_auto_setter_angle.gd"), 
-			preload("Setinators/Icons/icon_state_angle_fixer.png"))
+			preload("Setinators/Icons/icon_autosetter_angle.png"))
 	#endregion
 	
 	angle_autosetter_record_inspector_plugin = preload(

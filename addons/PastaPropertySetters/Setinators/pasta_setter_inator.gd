@@ -1,5 +1,5 @@
 @tool
-@icon("Icons/icon_state.png")
+@icon("Icons/icon_setter_manager.png")
 class_name PastaSetterInator
 extends Node
 ## Not necessary, but the intended use is to store multiple property setter components in one tidy place;
